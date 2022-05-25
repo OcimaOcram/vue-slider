@@ -33,18 +33,22 @@ const app = new Vue({
         slidesIndex: 0
     },
     methods: {
-        slideUp(slidesIndex) {
+        slideUp() {
             if (this.slidesIndex > 0) {
                 this.slidesIndex--;
             }
         },
-        slideDown(slidesIndex) {
+        slideDown() {
             if (this.slidesIndex < this.slides.length) {
                 this.slidesIndex++;
             }
         },
         changeSlide(slidesIndex) {
-            this.slidesIndex = ;
+
+           this.slidesIndex = slidesIndex;
+
         }
         },
     });
+
+    
