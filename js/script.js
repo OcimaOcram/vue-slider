@@ -26,4 +26,25 @@ const slides = [
     }
 ];
 
-console.log(slides);
+const app = new Vue({
+    el: "#app",
+    data: {
+        slides,
+        slidesIndex: 0
+    },
+    methods: {
+        slideUp(slidesIndex) {
+            if (this.slidesIndex > 0) {
+                this.slidesIndex--;
+            }
+        },
+        slideDown(slidesIndex) {
+            if (this.slidesIndex < this.slides.length) {
+                this.slidesIndex++;
+            }
+        },
+        changeSlide(slidesIndex) {
+            this.slidesIndex = ;
+        }
+        },
+    });
